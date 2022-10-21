@@ -1,206 +1,208 @@
 /* This is a CSS page, which provides style to the webpage*/
 
-        body 
-        { 
-       		font-size:17px;
-       		color: #FFFFFF;
-			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-width='0.3'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%231C083A'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
-            background-color: #260F49;                    
-        } 
-			
-		
-        .myphoto 	/* Cuando se pasa el ratón sobre la foto, esta gira y se modifica su aspecto */
-        { 
-            height:128px;
-            width:128px;
-            object-fit:cover;
-            border-radius: 9999px;
-            border-width: 3px;
-            border-style:solid;
-            border-color:#3C4556;
-            transition: transform .7s ease-in-out; 
-        }       
+body {
+	font-size: 17px;
+	color: #FFFFFF;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23FFFFFF' stroke-width='0.3'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%231C083A'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+	background-color: #260F49;
+}
 
-        .myphoto:hover 
-        {
-        	border-radius: 30%;       
-            transform: rotate(15deg);
-       	}
-        	        
-       	.email 		/* Permite seleccionar toda la dirección de e-mail con un solo clic */
-       	{
-       		user-select:all;  	
-       	}
-        	
-        .social {
-        	margin:0 4px 0 2px;
-        	font-size:18px;    	
-       	}  	
-        		        
-       	.social:hover 
-       	{      	
-      		color: rgb(13 148 136);      	
-       	}  
-       
-        .icons {
-    		width: 25px;
-    		height: 25px;
-    		margin-right:5px;
-		}
-            
-        .educ, .skills
-        {
-        	display: flex;
-  			align-items: center;
-    
-        }
-        
-        .list-group
-        {
-        	display: flex;
-        	list-style-type: none; 		
-    		flex-direction: row;
-    		flex-wrap: wrap;
-    		margin:10px 0 20px 0;
-  		}
+.myphoto
+/* Cuando se pasa el ratón sobre la foto, esta gira y se modifica su aspecto */
+	{
+	height: 128px;
+	width: 128px;
+	object-fit: cover;
+	border-radius: 9999px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #3C4556;
+	transition: transform .7s ease-in-out;
+}
 
-  		.list-group-item
-  		{
-  			flex-basis: 33.3333%;
-  			background-color: transparent;
-  			color:white; 		
-  		}
-        
-        svg {
-        	margin-right:5px;    
-        }
-        
-        #cert 
-        { 
-            float: left; 
-            margin: 0 40px 0 0; 
-            width:80px;
-            height:80px;
-        }
-                 
-        #logo 
-        {   
-            margin-right: 20px;
-            width:60px;
-            height:60px;
-        }
-         
-        h1 
-        {  
-            color: white;
-            font-size: 40px; 
-            font-weight: bold; 
-            font-family: "Lucida Console", "Courier New", monospace;
-            letter-spacing: 3px; 
-         }
+.myphoto:hover {
+	border-radius: 30%; 
+	transform: rotate(15deg);
+}
 
-        h1:hover 
-        { 
-            color:rgb(60, 141, 179);
-        }
+.email
+/* Permite seleccionar toda la dirección de e-mail con un solo clic */
+	{
+	user-select: all;
+}
 
-        h2 
-        { 
-        	color: #319795;
-            font-size: 30px;
-            position: relative;
-            font-family: Georgia, Serif;
-            font-style: italic;           
-        }
-        
-        h3 
-        { 
-            font-size: 24px;
-            position: relative; 
-        }
-        
-        h4 
-        { 
-            font-size: 20px;
-            font-weight: bold; 
-            position: relative; 
-        }
-        
-        .intro 
-        {
-        	font-size: 24px;
-            font-family: Arial, Helvetica, sans-serif;
-            color:rgb(13, 148, 136);     
-        }
+.social {
+	margin: 0 4px 0 2px;
+	font-size: 18px;
+}
 
-        p 
-        { 
-        	color: white;
-            font-family: Georgia, Serif;
-            font-style: italic; 
-        }
+.social:hover {
+	color: rgb(13 148 136);
+}
 
-        a 
-        {       	
-            outline-style:none;
-            text-decoration: none;
- 		}
- 		
- 		a:link 
- 		{
- 			color: #0084c4;
-		}
+.icons {
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+}
 
-		a:visited 
-		{
-  			color: #c7c7c7;
-		}
+.educ,
+.skills {
+	display: flex;
+	align-items: center;
 
-		a:focus 
-		{
- 			border-bottom: 1px dotted;
-  			background: none;
-		}
+}
 
-        a:hover 
-        { 
-  			color: rgb(13 148 136);
-        }
-            
-        a:active 
-        {
-  			background: none;
-  			color: #c0c0c0;
-		}
+.list-group {
+	display: flex;
+	list-style-type: none;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 10px 0 20px 0;
+}
 
-        dt 
-        {  
-            font-style:normal;
-            font-weight: bold; 
-            font-size: 20px; 
-            text-align: left; 
-            width: 15%; 
-            float: left; 
-            height: 180px;	 
-            border-right: 1px solid #999;  
-        }
+@media (min-width: 768px) {
+	.list-group-item {
+		flex-basis: 33.3333%;
+		background-color: transparent;
+		color: white;
+	}
+}
 
-        dd 
-        { 
-        	font-style:oblique;
-            font-weight: normal; 
-            font-size: 18px;
-        	display: flex;
-  			align-items: center;
-            width:70%;	
-			padding-left:5px;
-			margin: 0 10px 20px;
-            float: left;          
-        }
-            
-        dd.clear 
-        {
-            float: none; 
-            height: 15px; 
-        }
-       
+@media (max-width: 768px) {
+	.list-group-item {
+		flex-basis: 50%;
+		background-color: transparent;
+		color: white;
+	}
+}
+
+svg {
+	margin-right: 5px;
+}
+
+#cert {
+	float: left;
+	margin: 0 40px 0 0;
+	width: 80px;
+	height: 80px;
+}
+
+#logo {
+	margin-right: 20px;
+	width: 60px;
+	height: 60px;
+}
+
+h1 {
+	color: white;
+	font-size: 40px;
+	font-weight: bold;
+	font-family: "Lucida Console", "Courier New", monospace;
+	letter-spacing: 3px;
+}
+
+h1:hover {
+	color: rgb(60, 141, 179);
+}
+
+h2 {
+	color: #319795;
+	font-size: 30px;
+	position: relative;
+	font-family: Georgia, Serif;
+	font-style: italic;
+}
+
+h3 {
+	font-size: 24px;
+	position: relative;
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: bold;
+	position: relative;
+}
+
+.intro {
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(13, 148, 136);
+}
+
+p {
+	color: white;
+	font-family: Georgia, Serif;
+	font-style: italic;
+}
+
+a {
+	outline-style: none;
+	text-decoration: none;
+}
+
+a:link {
+	color: #0084c4;
+}
+
+a:visited {
+	color: #7ddeec;
+}
+
+a:focus {
+	border-bottom: 1px dotted;
+	background: none;
+}
+
+a:hover {
+	color: rgb(13 148 136);
+}
+
+a:active {
+	background: none;
+	color: #c0c0c0;
+}
+
+@media (min-width: 768px) {
+	dt {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		text-align: left;
+		width: 15%;
+		float: left;
+		height: 180px;
+		border-right: 1px solid #999;
+	}
+}
+
+@media (max-width: 768px) {
+	dt {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		text-align: left;
+		width: 20%;
+		float: left;
+		height: 250px;
+		border-right: 1px solid #999;
+	}
+}
+
+dd {
+	font-style: oblique;
+	font-weight: normal;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	width: 70%;
+	padding-left: 5px;
+	margin: 0 10px 20px;
+	float: left;
+}
+
+dd.clear {
+	float: none;
+	height: 15px;
+}       
