@@ -7,7 +7,7 @@
     });
     
     function updateCounter(){
-    	let url = "https://nkcrre35j9.execute-api.us-east-1.amazonaws.com/dev/counter"
+    	let url = "https://7qjgcnp7j0.execute-api.us-east-1.amazonaws.com/dev/counter"
     	  fetch(url)
     	    .then(response => response.json())
     	    .then(data=> {
