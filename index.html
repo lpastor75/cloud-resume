@@ -36,7 +36,7 @@
                   </div>
                </div>
                <div class="flex-auto text-right m-4">
-                  <img src="./images/lpastor.jpg" alt="Luis Pastor" class="myphoto"></img>
+                  <img src="./images/lpastor.jpg" alt="Luis Pastor" class="my_photo"></img>
                   <div class="pt-2 social-bar">
                      <a href="https://github.com/lpastor75" target="_blank" rel="noopener noreferrer"
                         class="social-pill">
@@ -135,51 +135,116 @@
          <div class="row">
 
             <div class="col-md-8 mb-4">
-               <h4>CLOUD RESUME CHALLENGE</h4>
+   <h4>CLOUD RESUME CHALLENGE</h4>
 
-               <ul class="list-inline mb-3">
-                  <li class="list-inline-item">
-                     <i class="fa-brands fa-github mr-2"></i>
-                     <a class="mx-2" href="https://github.com/lpastor75/resume-cloud" target="_blank"
-                        rel="noopener noreferrer">GITHUB FRONTEND</a>
-                  </li>
-                  <li class="list-inline-item">
-                     <i class="fa-brands fa-github mr-2"></i>
-                     <a class="mx-2" href="https://github.com/lpastor75/cloud-resume-challenge-backend" target="_blank"
-                        rel="noopener noreferrer">GITHUB BACKEND</a>
-                  </li>
-                  <li class="list-inline-item">
-                     <i class="fa-brands fa-blogger mr-2"></i>
-                     <a class="mx-2" href="https://blog.luispastor.dev/the-cloud-resume-challenge-aws" target="_blank"
-                        rel="noopener noreferrer">BLOG POST</a>
-                  </li>
-               </ul>
+   <ul class="list-inline mb-3">
+      <li class="list-inline-item">
+         <i class="fa-brands fa-github mr-2"></i>
+         <a class="mx-2" href="https://github.com/lpastor75/resume-cloud" target="_blank"
+            rel="noopener noreferrer">GITHUB FRONTEND</a>
+      </li>
+      <li class="list-inline-item">
+         <i class="fa-brands fa-github mr-2"></i>
+         <a class="mx-2" href="https://github.com/lpastor75/cloud-resume-challenge-backend" target="_blank"
+            rel="noopener noreferrer">GITHUB BACKEND</a>
+      </li>
+      <li class="list-inline-item">
+         <i class="fas fa-pen-nib"></i>
+         <a class="mx-2" href="https://blog.luispastor.dev/the-cloud-resume-challenge-aws" target="_blank"
+            rel="noopener noreferrer">BLOG POST</a>
+      </li>
+   </ul>
 
-               <p>
-                  Design and development of a serverless personal website
-                  hosted on AWS. The solution integrates Amazon S3,
-                  CloudFront, Route 53, API Gateway, Lambda and DynamoDB,
-                  with Python-based backend logic and infrastructure
-                  management using Serverless Framework.
-               </p>
-            </div>
+   <p>
+      Design and development of a serverless personal website
+      hosted on AWS. The solution integrates Amazon S3,
+      CloudFront, Route 53, API Gateway, Lambda and DynamoDB,
+      with Python-based backend logic and infrastructure
+      management using Serverless Framework.
+   </p>
+
+   <!-- Contenedor explicativo y clicable del diagrama -->
+   <figure class="architecture-box mt-3">
+      <div class="architecture-img-wrapper" data-bs-toggle="modal" data-bs-target="#crcDiagramModal" title="Click to enlarge diagram">
+         <img src="images/cloud-resume-architecture.png"
+     		class="img-fluid architecture-img"
+     		alt="AWS Serverless Architecture Diagram for Cloud Resume Challenge">
+         <span class="zoom-badge">
+            <i class="fas fa-search-plus"></i> Click to enlarge
+         </span>
+      </div>
+      <figcaption class="architecture-caption">
+         <strong>Architecture Overview:</strong> Static hosting via S3 &amp; CloudFront (HTTPS/OAI) with Route 53 DNS, serverless visitor counter (API Gateway, Python Lambda, DynamoDB), IaC with Serverless Framework / CloudFormation, and CI/CD pipelines via GitHub Actions.
+      </figcaption>
+   </figure>
+</div>
+
+<!-- Modal de Bootstrap para ver el diagrama en grande -->
+<div class="modal fade" id="crcDiagramModal" tabindex="-1" aria-labelledby="crcDiagramModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content architecture-modal-content">
+         <div class="modal-header border-0">
+            <h5 class="modal-title text-white" id="crcDiagramModalLabel">Cloud Resume Challenge — AWS Architecture</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body text-center p-2">
+            <img src="./images/cloud-resume-architecture.png"
+                 class="img-fluid rounded"
+                 alt="AWS Serverless Architecture Diagram Full Size">
+         </div>
+      </div>
+   </div>
+</div>
+            
 
             <div class="col-md-8 mb-4">
-               <h4>TAG CLOUD</h4>
+   <h4>TAG CLOUD</h4>
 
-               <h5 class="mb-3">
-                  <i class="fa-brands fa-github mr-2"></i>
-                  <a class="mx-2" href="https://github.com/lpastor75/tag-cloud" target="_blank"
-                     rel="noopener noreferrer">GITHUB</a>
-               </h5>
+   <h5 class="mb-3">
+      <i class="fa-brands fa-github mr-2"></i>
+      <a class="mx-2" href="https://github.com/lpastor75/tag-cloud" target="_blank"
+         rel="noopener noreferrer">GITHUB</a>
+   </h5>
 
-               <p>
-                  Development of a cloud-based image analysis application
-                  that processes uploaded images and identifies descriptive
-                  labels using AWS services.
-               </p>
-            </div>
+   <p>
+      Development of a cloud-based image analysis application
+      that processes uploaded images and identifies descriptive
+      labels using AWS services.
+   </p>
 
+   <!-- Contenedor explicativo y clicable del diagrama Tag Cloud -->
+   <figure class="architecture-box mt-3">
+      <div class="architecture-img-wrapper" data-bs-toggle="modal" data-bs-target="#tagCloudDiagramModal" title="Click to enlarge diagram">
+         <img src="images/tag-cloud-architecture.png"
+              class="img-fluid architecture-img"
+              alt="AWS Event-Driven Architecture Diagram for Tag Cloud">
+         <span class="zoom-badge">
+            <i class="fas fa-search-plus"></i> Click to enlarge
+         </span>
+      </div>
+      <figcaption class="architecture-caption">
+         <strong>Architecture Overview:</strong> Event-driven serverless pipeline. Users request S3 pre-signed URLs via API Gateway &amp; Lambda (<code>get-signed-url</code>) to upload images directly to an input S3 bucket. An S3 event triggers a Lambda function (<code>on-new-image</code>) that invokes <strong>Amazon Rekognition</strong> to extract image labels, stores metadata in <strong>DynamoDB</strong>, and moves processed images to a storage bucket for querying by tag or category.
+      </figcaption>
+   </figure>
+</div>
+
+<!-- Modal de Bootstrap para ampliar el diagrama de Tag Cloud -->
+<div class="modal fade" id="tagCloudDiagramModal" tabindex="-1" aria-labelledby="tagCloudDiagramModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content architecture-modal-content">
+         <div class="modal-header border-0">
+            <h5 class="modal-title text-white" id="tagCloudDiagramModalLabel">Tag Cloud — AWS Event-Driven Architecture</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body text-center p-2">
+            <img src="images/tag-cloud-architecture.png"
+                 class="img-fluid rounded"
+                 alt="AWS Event-Driven Architecture Diagram Full Size">
+         </div>
+      </div>
+   </div>
+</div>
+            
          </div>
 
       </div>
@@ -192,18 +257,18 @@
             <div class="col-md-8 col-sm-12">
 
                <!-- Máster UCLM (Clicable con validación eTítulo) -->
-               <a href="https://www.etitulo.com/validate/v/0DADD66C-B468-4E50-AC18-5C7FB8B0FA2B" target="_blank"
-                  rel="noopener noreferrer" class="cert-card mb-4">
-                  <img src="./images/logo_uclm.png" alt="UCLM Logo" class="cert-badge edu-logo" />
-                  <div class="cert-info">
-                     <span class="cert-issuer">Universidad de Castilla-La Mancha (UCLM)</span>
-                     <h4 class="cert-title">Master's Degree in Data Science and Cloud Data Engineering</h4>
-                     <span class="cert-level">Grade: <strong>9.5 / 10</strong></span>
-                     <span class="cert-verify">
-                        <i class="fas fa-check-circle"></i> Verified Official Degree (eTítulo)
-                     </span>
-                  </div>
-               </a>
+<a href="https://etitulo.com" target="_blank" rel="noopener noreferrer" class="cert-card mb-4">
+   <img src="./images/logo_uclm.png" alt="UCLM Logo" class="cert-badge edu-logo" />
+   <span class="cert-info">
+      <span class="cert-issuer">Universidad de Castilla-La Mancha (UCLM)</span>
+      <span class="cert-title">Master's Degree in Data Science and Cloud Data Engineering</span>
+      <span class="cert-level">Grade: <strong>9.5 / 10</strong></span>
+      <span class="cert-verify">
+         <i class="fas fa-check-circle"></i> Verified Official Degree (eTítulo)
+      </span>
+   </span>
+</a>
+
 
                <!-- Grado UNED (Estática con mención al Premio a la Excelencia) -->
                <div class="cert-card cert-card-static">
@@ -226,17 +291,17 @@
          <!--simply add any certs you have here-->
          <div class="row mt-4">
             <div class="col-md-8 col-sm-12">
-               <a href="https://www.credly.com/badges/981b3ed3-adfd-4e47-a7a9-0eb5f0be20ff/public_url" target="_blank"
-                  rel="noopener noreferrer" class="cert-card">
-                  <img src="./images/aws_ccp.png" alt="AWS Certified Cloud Practitioner Badge" class="cert-badge" />
-                  <div class="cert-info">
-                     <span class="cert-issuer">Amazon Web Services (AWS)</span>
-                     <h4 class="cert-title">AWS Certified Cloud Practitioner</h4>
-                     <span class="cert-verify">
-                        <i class="fas fa-check-circle"></i> Verified Credential on Credly
-                     </span>
-                  </div>
-               </a>
+               <a href="https://credly.com" target="_blank" rel="noopener noreferrer" class="cert-card">
+   <img src="./images/aws_ccp.png" alt="AWS Certified Cloud Practitioner Badge" class="cert-badge" />
+   <span class="cert-info">
+      <span class="cert-issuer">Amazon Web Services (AWS)</span>
+      <span class="cert-title">AWS Certified Cloud Practitioner</span>
+      <span class="cert-verify">
+         <i class="fas fa-check-circle"></i> Verified Credential on Credly
+      </span>
+   </span>
+</a>
+
             </div>
          </div>
          <div class="row mt-4">
@@ -622,7 +687,7 @@
       <script src="https://kit.fontawesome.com/1069a83c0f.js" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
       <script src="js/utils.js"></script>
-      <script>updateCounter()</script>
+      <!-- <script>updateCounter()</script>-->
 
 </body>
 
