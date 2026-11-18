@@ -28,7 +28,7 @@ Personal portfolio website built for Forrest Brazeal's [Cloud Resume Challenge](
 * **Frontend:** HTML5, CSS3, Bootstrap 5, Vanilla JavaScript (Fetch API), Typed.js
 * **AWS Hosting & Edge Services:** S3, CloudFront, Route 53, Certificate Manager (ACM)
 * **CI/CD Pipeline:** GitHub Actions (`aws s3 sync` + CloudFront invalidation)
-* **Backend & IaC:** Python 3.9, API Gateway, Lambda, DynamoDB, Serverless Framework ([View Backend Repository](https://github.com))
+* **Backend & IaC:** Python 3.9, API Gateway, Lambda, DynamoDB, Serverless Framework ([View Backend Repository](https://github.com/lpastor75/cloud-resume-challenge-backend)
 
 ---
 
@@ -49,5 +49,5 @@ Personal portfolio website built for Forrest Brazeal's [Cloud Resume Challenge](
 ## 🔗 Related Resources
 
 * 🌐 **Live Portfolio:** [luispastor.dev](https://luispastor.dev)
-* ⚙️ **Backend & IaC Repository (Serverless, Lambda & Tests):** [lpastor75/cloud-resume-challenge-backend](https://github.com)
+* ⚙️ **Backend & IaC Repository (Serverless, Lambda & Tests):** [lpastor75/cloud-resume-challenge-backend](https://github.com/lpastor75/cloud-resume-challenge-backend)
 * 📝 **Detailed Technical Walkthrough (Spanish):** [The Cloud Resume Challenge - AWS](https://luispastor.dev)
