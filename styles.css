@@ -28,7 +28,7 @@ body {
   padding: 24px 28px 8px;
 }
 
-.my_photo
+.selfie
 /* Cuando se pasa el ratón sobre la foto, esta gira y se modifica su aspecto */ {
   height: 128px;
   width: 128px;
@@ -41,7 +41,7 @@ body {
   transition: transform 0.7s ease-in-out;
 }
 
-.myphoto:hover {
+.selfie:hover {
   border-radius: 30%;
   transform: rotate(15deg);
 }
@@ -649,4 +649,29 @@ a:active {
    background-color: #1C083A;
    border: 1px solid rgba(196, 181, 253, 0.4);
 }
+
+/* Etiqueta del contador de visitas serverless */
+.visitor-badge {
+   display: inline-flex;
+   align-items: center;
+   gap: 8px;
+   padding: 6px 14px;
+   border-radius: 6px;
+   background-color: rgba(28, 8, 58, 0.75);
+   border: 1px solid rgba(196, 181, 253, 0.35);
+   color: #E2E8F0;
+   font-size: 1.5rem;
+}
+
+.visitor-badge i {
+   color: #4FD1C5;
+}
+
+.counter-number {
+   color: #4FD1C5;
+   font-weight: bold;
+   font-family: "Lucida Console", "Courier New", monospace;
+   font-size: 1.6rem;
+}
+
 
