@@ -605,8 +605,9 @@ a:active {
    overflow: hidden;
    border-radius: 6px;
    background-color: #FFFFFF;
-   padding: 8px;
+   padding: 12px 12px 44px 12px; /* Deja espacio libre abajo para el botón Click to enlarge */
 }
+
 
 .architecture-img {
    width: 100%;
@@ -673,5 +674,3 @@ a:active {
    font-family: "Lucida Console", "Courier New", monospace;
    font-size: 1.6rem;
 }
-
-

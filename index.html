@@ -97,6 +97,38 @@
                   customer reviews using Apache Spark, machine learning
                   and AWS integrations.
                </p>
+               <!-- Contenedor explicativo y clicable del diagrama Amazon Reviews -->
+<figure class="architecture-box mt-3">
+   <div class="architecture-img-wrapper" data-bs-toggle="modal" data-bs-target="#amazonDiagramModal" title="Click to enlarge diagram">
+      <img src="images/amazon-reviews-architecture.png"
+           class="img-fluid architecture-img"
+           alt="Amazon Reviews Batch and Streaming Data Pipeline Architecture Diagram">
+      <span class="zoom-badge">
+         <i class="fas fa-search-plus"></i> Click to enlarge
+      </span>
+   </div>
+   <figcaption class="architecture-caption">
+      <strong>Architecture Overview:</strong> Dual-path distributed data pipeline built with <strong>Apache Spark</strong> on AWS. The <em>Batch</em> path processes customer reviews on <strong>Amazon EMR</strong>, applies TF-IDF feature engineering, trains Spark ML classification models, and persists artifacts in <strong>Amazon S3</strong>. The <em>Streaming</em> path ingests live events from <strong>Amazon Kinesis Data Streams</strong> using Spark Structured Streaming and performs real-time sentiment analysis via <strong>Amazon Comprehend</strong>.
+   </figcaption>
+</figure>
+
+<!-- Modal de Bootstrap para ampliar el diagrama -->
+<div class="modal fade" id="amazonDiagramModal" tabindex="-1" aria-labelledby="amazonDiagramModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content architecture-modal-content">
+         <div class="modal-header border-0">
+            <h5 class="modal-title text-white" id="amazonDiagramModalLabel">Amazon Reviews — Batch &amp; Streaming Architecture</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body text-center p-2">
+            <img src="images/amazon-reviews-architecture.png"
+                 class="img-fluid rounded"
+                 alt="Amazon Reviews Batch and Streaming Data Pipeline Architecture Diagram Full Size">
+         </div>
+      </div>
+   </div>
+</div>
+               
             </div>
 
             <div class="col-md-8 mb-4">
@@ -114,6 +146,38 @@
                   and MongoDB to retrieve, transform and organize
                   movie-related information.
                </p>
+               <!-- Contenedor explicativo y clicable del diagrama ETL -->
+<figure class="architecture-box mt-3">
+   <div class="architecture-img-wrapper" data-bs-toggle="modal" data-bs-target="#movieDiagramModal" title="Click to enlarge diagram">
+      <img src="images/movie-pipeline-architecture.png"
+           class="img-fluid architecture-img"
+           alt="Movie Data Enrichment ETL Pipeline Architecture Diagram">
+      <span class="zoom-badge">
+         <i class="fas fa-search-plus"></i> Click to enlarge
+      </span>
+   </div>
+   <figcaption class="architecture-caption">
+      <strong>Pipeline Overview:</strong> End-to-end ETL workflow ingesting and filtering raw IMDb datasets, joining user ratings, enriching records via the external <strong>TMDb REST API</strong>, and persisting structured documents in <strong>MongoDB</strong> for downstream analytical queries.
+   </figcaption>
+</figure>
+
+<!-- Modal de Bootstrap para ampliar el diagrama -->
+<div class="modal fade" id="movieDiagramModal" tabindex="-1" aria-labelledby="movieDiagramModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content architecture-modal-content">
+         <div class="modal-header border-0">
+            <h5 class="modal-title text-white" id="movieDiagramModalLabel">Movie Data Enrichment — ETL Architecture</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body text-center p-2">
+            <img src="images/movie-pipeline-architecture.png"
+                 class="img-fluid rounded"
+                 alt="Movie Data Enrichment ETL Architecture Diagram Full Size">
+         </div>
+      </div>
+   </div>
+</div>
+               
             </div>
 
             <div class="col-md-8 mb-4">
@@ -131,6 +195,38 @@
                   in Spain, using Python-based data analysis and
                   visualization techniques.
                </p>
+               <!-- Contenedor explicativo y clicable del diagrama Electric Demand Spain -->
+<figure class="architecture-box mt-3">
+   <div class="architecture-img-wrapper" data-bs-toggle="modal" data-bs-target="#electricDiagramModal" title="Click to enlarge diagram">
+      <img src="images/electric-demand-architecture.png"
+           class="img-fluid architecture-img"
+           alt="Electric Demand Spain Data Pipeline Architecture Diagram">
+      <span class="zoom-badge">
+         <i class="fas fa-search-plus"></i> Click to enlarge
+      </span>
+   </div>
+   <figcaption class="architecture-caption">
+      <strong>Pipeline Overview:</strong> Automated data ingestion workflow fetching electricity demand series from the <strong>Red Eléctrica de España (REE)</strong> REST API. Includes JSON parsing, UTC normalization, hourly aggregation, data validation, and fault-tolerant incremental ingestion (state management &amp; retry logic) feeding monitoring dashboards and forecasting models.
+   </figcaption>
+</figure>
+
+<!-- Modal de Bootstrap para ampliar el diagrama -->
+<div class="modal fade" id="electricDiagramModal" tabindex="-1" aria-labelledby="electricDiagramModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content architecture-modal-content">
+         <div class="modal-header border-0">
+            <h5 class="modal-title text-white" id="electricDiagramModalLabel">Electric Demand Spain — Data Pipeline Architecture</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body text-center p-2">
+            <img src="images/electric-demand-architecture.png"
+                 class="img-fluid rounded"
+                 alt="Electric Demand Spain Data Pipeline Architecture Diagram Full Size">
+         </div>
+      </div>
+   </div>
+</div>
+               
             </div>
 
          </div>
