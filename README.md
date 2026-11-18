@@ -1,32 +1,53 @@
-# Cloud Resume
+# ☁️ Cloud Resume Challenge — Frontend
 
-This project was built for the Forrest Brazeal's cloud resume challenge. The details of the challenge can be found at https://cloudresumechallenge.dev/. It utilizes a variety of AWS services to host a resume website. It was built with HTML and styled with Bootstrap and custom CSS. 
+[![Live Demo](https://shields.io)](https://luispastor.dev)
+[![Backend Repo](https://shields.io)](https://github.com)
+[![Blog Post](https://shields.io)](https://luispastor.dev)
 
-## Architecture Diagram:
-![AWS Architecture diagram](./images/diagram_v2.png)
+Personal portfolio website built for Forrest Brazeal's [Cloud Resume Challenge](https://cloudresumechallenge.dev). This repository contains the **frontend codebase** (HTML5, CSS3, Bootstrap, and JavaScript) and the **CI/CD deployment workflow** to AWS using GitHub Actions.
 
-## AWS 
+---
 
-This project is hosted with AWS S3 buckets, CloudFront distributions, and Route 53. The backend was built with DynamoDB, one Lambda function, and API Gateway. This code is deployed using Serverless Framework (IaC). Serverless S3 Sync plugin was used to sync local directories and S3 prefixes. The backend code is in a separate repository (https://github.com/lpastor75/cloud-resume-challenge-backend).
+## 🏗️ Architecture Overview
 
-#### Functionality:
-* S3 bucket hosts the website.
-* Cloudfront used to meet https requirement and cache control.
-* DynamoDB and Lambda function used to implement visitor counter.
-* IAM Role to allow the Lambda function to access database table information.
-* Javascript used to retreive counter value from API and display on site.
-* APIGateway used to implement API endpoint.
+![AWS Architecture Diagram](images/cloud-resume-architecture.png)
 
-## Counter
+### How It Works
 
-The visit counter was built using all these backend services. We access the API gateway endpoint in index.html file. The API gateway triggers the Lambda function which is coded in Python 3.9 to add 1 to a visitsCount variable stored in a DynamoDB table. 
+1. **Content Delivery & Security:** Static assets (`index.html`, `styles.css`, `js/`) are hosted in a private **Amazon S3** bucket restricted via **Origin Access Identity (OAI)** and served globally over HTTPS using **Amazon CloudFront** and **AWS Certificate Manager (ACM)**.
+2. **Custom DNS:** **Amazon Route 53** manages DNS records (`A` and `CNAME`), routing traffic from `luispastor.dev` to the CloudFront distribution.
+3. **Serverless Visitor Counter:** On page load, an asynchronous JavaScript `fetch()` call queries an **Amazon API Gateway** REST endpoint, triggering a Python **AWS Lambda** function that atomically increments and retrieves the visitor count stored in **Amazon DynamoDB**.
+4. **Automated Frontend CI/CD:** Pushing changes to the `master` branch triggers a **GitHub Actions** pipeline (`.github/workflows/`) that syncs static files to S3 and invalidates the CloudFront cache automatically.
 
-![counter](./images/counter.png)
+*(Note: All cloud infrastructure provisioning via **Serverless Framework / AWS CloudFormation**, along with the Python Lambda backend and unit tests, is managed in the [Backend Repository](https://github.com)).*
 
-## Blog
+---
 
-In this blog I explain how I built the project in detail (it is written in spanish, my native language):  
-[Check out it here](https://blog.luispastor.dev)
+## 🛠️ Frontend & Deployment Stack
 
-## Demo
-[View the live site here!](https://luispastor.dev)
+* **Frontend:** HTML5, CSS3, Bootstrap 5, Vanilla JavaScript (Fetch API), Typed.js
+* **AWS Hosting & Edge Services:** S3, CloudFront, Route 53, Certificate Manager (ACM)
+* **CI/CD Pipeline:** GitHub Actions (`aws s3 sync` + CloudFront invalidation)
+* **Backend & IaC:** Python 3.9, API Gateway, Lambda, DynamoDB, Serverless Framework ([View Backend Repository](https://github.com))
+
+---
+
+## 📂 Repository Structure
+
+```text
+├── .github/workflows/   # GitHub Actions CI/CD deployment pipeline
+├── images/              # Architecture diagrams, badges, and profile assets
+├── js/                  # Visitor counter script (Fetch API) & typing animations
+├── index.html           # Main portfolio page
+├── error.html           # Custom 404/error page for S3 static hosting
+├── styles.css           # Custom styling and responsive layout rules
+└── README.md            # Project documentation
+```
+
+---
+
+## 🔗 Related Resources
+
+* 🌐 **Live Portfolio:** [luispastor.dev](https://luispastor.dev)
+* ⚙️ **Backend & IaC Repository (Serverless, Lambda & Tests):** [lpastor75/cloud-resume-challenge-backend](https://github.com)
+* 📝 **Detailed Technical Walkthrough (Spanish):** [The Cloud Resume Challenge - AWS](https://luispastor.dev)
