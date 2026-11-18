@@ -18,7 +18,7 @@ Personal portfolio website built for Forrest Brazeal's [Cloud Resume Challenge](
 3. **Serverless Visitor Counter:** On page load, an asynchronous JavaScript `fetch()` call queries an **Amazon API Gateway** REST endpoint, triggering a Python **AWS Lambda** function that atomically increments and retrieves the visitor count stored in **Amazon DynamoDB**.
 4. **Automated Frontend CI/CD:** Pushing changes to the `master` branch triggers a **GitHub Actions** pipeline (`.github/workflows/`) that syncs static files to S3 and invalidates the CloudFront cache automatically.
 
-*(Note: All cloud infrastructure provisioning via **Serverless Framework / AWS CloudFormation**, along with the Python Lambda backend and unit tests, is managed in the [Backend Repository](https://github.com)).*
+*(Note: All cloud infrastructure provisioning via **Serverless Framework / AWS CloudFormation**, along with the Python Lambda backend and unit tests, is managed in the [Backend Repository](https://github.com/lpastor75/cloud-resume-challenge-backend)).*
 
 ---
 
@@ -27,7 +27,7 @@ Personal portfolio website built for Forrest Brazeal's [Cloud Resume Challenge](
 * **Frontend:** HTML5, CSS3, Bootstrap 5, Vanilla JavaScript (Fetch API), Typed.js
 * **AWS Hosting & Edge Services:** S3, CloudFront, Route 53, Certificate Manager (ACM)
 * **CI/CD Pipeline:** GitHub Actions (`aws s3 sync` + CloudFront invalidation)
-* **Backend & IaC:** Python 3.9, API Gateway, Lambda, DynamoDB, Serverless Framework ([View Backend Repository](https://github.com/lpastor75/cloud-resume-challenge-backend)
+* **Backend & IaC:** Python 3.9, API Gateway, Lambda, DynamoDB, Serverless Framework ([View Backend Repository](https://github.com/lpastor75/cloud-resume-challenge-backend))
 
 ---
 
