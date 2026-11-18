@@ -1,6 +1,6 @@
 # ☁️ Cloud Resume Challenge — Frontend
 
-🌐 **[Live Demo (luispastor.dev)](https://luispastor.dev)** &nbsp;|&nbsp; ⚙️ **[Backend & IaC Repo]([https://github.com](https://github.com/lpastor75/cloud-resume-challenge-backend))** &nbsp;|&nbsp; 📝 **[Architecture Blog Post]([https://luispastor.dev](https://blog.luispastor.dev/the-cloud-resume-challenge-aws))**
+🌐 **[Live Demo (luispastor.dev)](https://luispastor.dev)** &nbsp;|&nbsp; ⚙️ **[Backend & IaC Repo](https://github.com/lpastor75/cloud-resume-challenge-backend)** &nbsp;|&nbsp; 📝 **[Architecture Blog Post](https://blog.luispastor.dev/the-cloud-resume-challenge-aws)**
 
 
 Personal portfolio website built for Forrest Brazeal's [Cloud Resume Challenge](https://cloudresumechallenge.dev). This repository contains the **frontend codebase** (HTML5, CSS3, Bootstrap, and JavaScript) and the **CI/CD deployment workflow** to AWS using GitHub Actions.
@@ -49,4 +49,4 @@ Personal portfolio website built for Forrest Brazeal's [Cloud Resume Challenge](
 
 * 🌐 **Live Portfolio:** [luispastor.dev](https://luispastor.dev)
 * ⚙️ **Backend & IaC Repository (Serverless, Lambda & Tests):** [lpastor75/cloud-resume-challenge-backend](https://github.com/lpastor75/cloud-resume-challenge-backend)
-* 📝 **Detailed Technical Walkthrough (Spanish):** [The Cloud Resume Challenge - AWS]([https://luispastor.dev](https://blog.luispastor.dev/the-cloud-resume-challenge-aws))
+* 📝 **Detailed Technical Walkthrough (Spanish):** [The Cloud Resume Challenge - AWS](https://blog.luispastor.dev/the-cloud-resume-challenge-aws)
