@@ -1,8 +1,7 @@
 # ☁️ Cloud Resume Challenge — Frontend
 
-[![Live Demo](https://shields.io)](https://luispastor.dev)
-[![Backend Repo](https://shields.io)](https://github.com)
-[![Blog Post](https://shields.io)](https://luispastor.dev)
+🌐 **[Live Demo (luispastor.dev)](https://luispastor.dev)** &nbsp;|&nbsp; ⚙️ **[Backend & IaC Repo](https://github.com)** &nbsp;|&nbsp; 📝 **[Architecture Blog Post](https://luispastor.dev)**
+
 
 Personal portfolio website built for Forrest Brazeal's [Cloud Resume Challenge](https://cloudresumechallenge.dev). This repository contains the **frontend codebase** (HTML5, CSS3, Bootstrap, and JavaScript) and the **CI/CD deployment workflow** to AWS using GitHub Actions.
 
